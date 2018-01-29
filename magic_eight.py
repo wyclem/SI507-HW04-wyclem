@@ -2,7 +2,8 @@ import random
 
 def getUserQuestion():
 	user_question = input("What is you question?")
-	return returnAnswer()
+	response = returnAnswer()
+	print(response)
 
 def returnAnswer():
 	possible_answers = []
@@ -27,4 +28,8 @@ def returnAnswer():
 	possible_answers.append("Outlook not so good")
 	possible_answers.append("Very doubtful")
 
+	#pick random index between 0 and 19
 	return possible_answers[random.randint(1,20)-1]
+
+
+getUserQuestion()
