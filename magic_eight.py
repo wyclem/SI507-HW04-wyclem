@@ -1,9 +1,15 @@
 import random
 
 def getUserQuestion():
-	user_question = input("What is you question?")
-	response = returnAnswer()
-	print(response)
+	user_question = input("What is your question?")
+	while user_question != 'quit':
+    	if user_question[-1] != "?":
+        	print("I'm sorry, I can only answer questions.")
+    	else:
+			response = returnAnswer()
+			print(response)
+		user_question = input("What is your question? (type 'quit' to exit) ")
+
 
 def returnAnswer():
 	possible_answers = []
@@ -33,3 +39,4 @@ def returnAnswer():
 
 
 getUserQuestion()
+
