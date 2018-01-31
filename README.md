@@ -1,3 +1,4 @@
 # SI507-HW04-wyclem
 
-# Jeremy Wolverton, Thursday Section, jjwolver
+# Person B
+Jeremy Wolverton, Thursday Section, jjwolver
